@@ -30,6 +30,3 @@ int max_task_2(int *arr, int n, int k){
             if(maxx < arr[i]) maxx = arr[i];
     return maxx;
 }
-
-
-
