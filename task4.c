@@ -7,7 +7,6 @@ void output_data_task_4(float);
 
 void runtask_4(int *arr, int n){
     float res;
-    int min_arr = 0, max_arr = 0;
     if(arr) {
         minMax_task_4(arr, n, &min_arr, &max_arr);
         res = avg_score_task_4(arr, n, min_arr, max_arr);
@@ -18,6 +17,7 @@ void runtask_4(int *arr, int n){
 }
 
 void minMax_task_4(int *arr, int n, int *min_arr, int *max_arr){
+    *min_arr = 0, *max_arr = 0;
     for(int i = 1; i < n; i++){
         if(arr[*max_arr] < arr[i]) *max_arr = i;
         if(arr[*min_arr] > arr[i]) *min_arr = i;
