@@ -29,7 +29,7 @@ float avg_score_task_4(int *arr, int n, int min_arr, int max_arr){
     for(int i = 0; i < n; i++)
         if(i != max_arr || i != min_arr)
             sum += arr[i];
-    avg = sum / n;
+    avg = sum / (n-2);
     return avg;
 }
 
